@@ -1,0 +1,8 @@
+
+#include "./InsideConfig/ProductionPrivate.xcconfig"
+#include "../../Pods/Target Support Files/Pods-$(PRODUCT_NAME)/Pods-$(PRODUCT_NAME).release.xcconfig"
+
+APIHost = 0
+QiNiuHost = 0
+BundleIdentifier = hk.ganguo.xxx
+ProductDisplayName = xxxx

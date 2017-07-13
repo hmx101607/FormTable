@@ -1,0 +1,815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6CCCFA77BF05ADFCFEFBC390 /* libPods-FormTableDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BB828E2A658843008EE310 /* libPods-FormTableDemo.a */; };
+		938868CD1F1700AA009158B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 938868CC1F1700AA009158B5 /* main.m */; };
+		938868CF1F1700AA009158B5 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 938868CE1F1700AA009158B5 /* Podfile */; };
+		938868EC1F1700AA009158B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 938868EB1F1700AA009158B5 /* AppDelegate.m */; };
+		938868F31F1700AA009158B5 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 938868F21F1700AA009158B5 /* libsqlite3.dylib */; };
+		938868F51F1700AA009158B5 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938868F41F1700AA009158B5 /* images.xcassets */; };
+		938869251F1700DA009158B5 /* NSObject+AutoDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 938869001F1700DA009158B5 /* NSObject+AutoDescription.m */; };
+		938869261F1700DA009158B5 /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 938869021F1700DA009158B5 /* UIActionSheet+Blocks.m */; };
+		938869271F1700DA009158B5 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 938869041F1700DA009158B5 /* UIAlertView+Blocks.m */; };
+		938869281F1700DA009158B5 /* UIButton+ActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 938869061F1700DA009158B5 /* UIButton+ActivityIndicatorView.m */; };
+		938869291F1700DA009158B5 /* UILabel+FormattedText.m in Sources */ = {isa = PBXBuildFile; fileRef = 938869081F1700DA009158B5 /* UILabel+FormattedText.m */; };
+		9388692A1F1700DA009158B5 /* UIStoryboard+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9388690A1F1700DA009158B5 /* UIStoryboard+Addition.m */; };
+		9388692B1F1700DA009158B5 /* UITableViewCell+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9388690C1F1700DA009158B5 /* UITableViewCell+Utils.m */; };
+		9388692C1F1700DA009158B5 /* UIView+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 9388690E1F1700DA009158B5 /* UIView+Create.m */; };
+		9388692D1F1700DA009158B5 /* UIView+LayoutConstraintHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 938869101F1700DA009158B5 /* UIView+LayoutConstraintHelper.m */; };
+		9388692E1F1700DA009158B5 /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 938869121F1700DA009158B5 /* UIView+Utils.m */; };
+		9388692F1F1700DA009158B5 /* UIViewController+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 938869141F1700DA009158B5 /* UIViewController+Create.m */; };
+		938869301F1700DA009158B5 /* ArrayUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9388691A1F1700DA009158B5 /* ArrayUtils.m */; };
+		938869311F1700DA009158B5 /* AutorotateNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9388691C1F1700DA009158B5 /* AutorotateNavigationController.m */; };
+		938869321F1700DA009158B5 /* GGDatePickerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9388691E1F1700DA009158B5 /* GGDatePickerHelper.m */; };
+		938869331F1700DA009158B5 /* GGImagePickerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 938869201F1700DA009158B5 /* GGImagePickerHelper.m */; };
+		938869341F1700DA009158B5 /* GGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938869221F1700DA009158B5 /* GGNavigationController.m */; };
+		938869351F1700DA009158B5 /* PortraitNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938869241F1700DA009158B5 /* PortraitNavigationController.m */; };
+		938869391F17019A009158B5 /* FTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938869371F17019A009158B5 /* FTHomeViewController.m */; };
+		9388693A1F17019A009158B5 /* FTHomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 938869381F17019A009158B5 /* FTHomeViewController.storyboard */; };
+		9388693F1F1701BE009158B5 /* GGUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9388693C1F1701BE009158B5 /* GGUtil.m */; };
+		938869401F1701BE009158B5 /* UIViewController+NavItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9388693E1F1701BE009158B5 /* UIViewController+NavItem.m */; };
+		938869441F1701DF009158B5 /* FTFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938869421F1701DF009158B5 /* FTFormViewController.m */; };
+		938869451F1701DF009158B5 /* FTFormViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 938869431F1701DF009158B5 /* FTFormViewController.storyboard */; };
+		938869491F1705F7009158B5 /* FTFormTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 938869481F1705F7009158B5 /* FTFormTableViewCell.m */; };
+		9388694C1F170658009158B5 /* FTFormItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9388694B1F170658009158B5 /* FTFormItemCollectionViewCell.m */; };
+		938869511F170C65009158B5 /* FTListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9388694F1F170C65009158B5 /* FTListTableViewCell.m */; };
+		938869521F170C65009158B5 /* FTListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 938869501F170C65009158B5 /* FTListTableViewCell.xib */; };
+		938869561F170C83009158B5 /* FTListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 938869541F170C83009158B5 /* FTListCollectionViewCell.m */; };
+		938869571F170C83009158B5 /* FTListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 938869551F170C83009158B5 /* FTListCollectionViewCell.xib */; };
+		9388695B1F170E4E009158B5 /* FTListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938869591F170E4E009158B5 /* FTListViewController.m */; };
+		9388695C1F170E4E009158B5 /* FTListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9388695A1F170E4E009158B5 /* FTListViewController.storyboard */; };
+		9388695F1F171221009158B5 /* FTCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9388695E1F171221009158B5 /* FTCollectionViewController.m */; };
+		938869621F1716DB009158B5 /* FTFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 938869611F1716DB009158B5 /* FTFormView.m */; };
+		938869651F174338009158B5 /* FTFormModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 938869641F174338009158B5 /* FTFormModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0FB06384735B61AB3E70C7F5 /* Pods-FormTableDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FormTableDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FormTableDemo/Pods-FormTableDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		1169560A9F10A37711C8D643 /* Pods-FormTableDemo.app store.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FormTableDemo.app store.xcconfig"; path = "Pods/Target Support Files/Pods-FormTableDemo/Pods-FormTableDemo.app store.xcconfig"; sourceTree = "<group>"; };
+		79BB828E2A658843008EE310 /* libPods-FormTableDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FormTableDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86B8CBCA81844B6ECC5F5A59 /* Pods-FormTableDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FormTableDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FormTableDemo/Pods-FormTableDemo.release.xcconfig"; sourceTree = "<group>"; };
+		938868C61F1700AA009158B5 /* FormTableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormTableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		938868CA1F1700AA009158B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		938868CB1F1700AA009158B5 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		938868CC1F1700AA009158B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		938868CE1F1700AA009158B5 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../../Podfile; sourceTree = "<group>"; };
+		938868D11F1700AA009158B5 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Staging.xcconfig; path = Xcconfig/Staging.xcconfig; sourceTree = "<group>"; };
+		938868D21F1700AA009158B5 /* ProductionInhouse.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = ProductionInhouse.xcconfig; path = Xcconfig/ProductionInhouse.xcconfig; sourceTree = "<group>"; };
+		938868D31F1700AA009158B5 /* AS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = AS.xcconfig; path = Xcconfig/AS.xcconfig; sourceTree = "<group>"; };
+		938868D51F1700AA009158B5 /* StagingPrivate.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = StagingPrivate.xcconfig; path = Xcconfig/InsideConfig/StagingPrivate.xcconfig; sourceTree = "<group>"; };
+		938868D61F1700AA009158B5 /* ProductionPrivate.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = ProductionPrivate.xcconfig; path = Xcconfig/InsideConfig/ProductionPrivate.xcconfig; sourceTree = "<group>"; };
+		938868D71F1700AA009158B5 /* ASPrivate.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = ASPrivate.xcconfig; path = Xcconfig/InsideConfig/ASPrivate.xcconfig; sourceTree = "<group>"; };
+		938868D81F1700AA009158B5 /* Entitlements.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Entitlements.entitlements; sourceTree = "<group>"; };
+		938868E01F1700AA009158B5 /* APIAddress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIAddress.h; sourceTree = "<group>"; };
+		938868E11F1700AA009158B5 /* AppConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
+		938868EA1F1700AA009158B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		938868EB1F1700AA009158B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		938868F21F1700AA009158B5 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = /usr/lib/libsqlite3.dylib; sourceTree = DEVELOPER_DIR; };
+		938868F41F1700AA009158B5 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = images.xcassets; path = ../images.xcassets; sourceTree = "<group>"; };
+		938868FF1F1700DA009158B5 /* NSObject+AutoDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AutoDescription.h"; sourceTree = "<group>"; };
+		938869001F1700DA009158B5 /* NSObject+AutoDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AutoDescription.m"; sourceTree = "<group>"; };
+		938869011F1700DA009158B5 /* UIActionSheet+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+Blocks.h"; sourceTree = "<group>"; };
+		938869021F1700DA009158B5 /* UIActionSheet+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Blocks.m"; sourceTree = "<group>"; };
+		938869031F1700DA009158B5 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
+		938869041F1700DA009158B5 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
+		938869051F1700DA009158B5 /* UIButton+ActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ActivityIndicatorView.h"; sourceTree = "<group>"; };
+		938869061F1700DA009158B5 /* UIButton+ActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ActivityIndicatorView.m"; sourceTree = "<group>"; };
+		938869071F1700DA009158B5 /* UILabel+FormattedText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+FormattedText.h"; sourceTree = "<group>"; };
+		938869081F1700DA009158B5 /* UILabel+FormattedText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+FormattedText.m"; sourceTree = "<group>"; };
+		938869091F1700DA009158B5 /* UIStoryboard+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+Addition.h"; sourceTree = "<group>"; };
+		9388690A1F1700DA009158B5 /* UIStoryboard+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+Addition.m"; sourceTree = "<group>"; };
+		9388690B1F1700DA009158B5 /* UITableViewCell+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Utils.h"; sourceTree = "<group>"; };
+		9388690C1F1700DA009158B5 /* UITableViewCell+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Utils.m"; sourceTree = "<group>"; };
+		9388690D1F1700DA009158B5 /* UIView+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Create.h"; sourceTree = "<group>"; };
+		9388690E1F1700DA009158B5 /* UIView+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Create.m"; sourceTree = "<group>"; };
+		9388690F1F1700DA009158B5 /* UIView+LayoutConstraintHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutConstraintHelper.h"; sourceTree = "<group>"; };
+		938869101F1700DA009158B5 /* UIView+LayoutConstraintHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutConstraintHelper.m"; sourceTree = "<group>"; };
+		938869111F1700DA009158B5 /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utils.h"; sourceTree = "<group>"; };
+		938869121F1700DA009158B5 /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utils.m"; sourceTree = "<group>"; };
+		938869131F1700DA009158B5 /* UIViewController+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Create.h"; sourceTree = "<group>"; };
+		938869141F1700DA009158B5 /* UIViewController+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Create.m"; sourceTree = "<group>"; };
+		938869151F1700DA009158B5 /* GGCommonKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGCommonKit.h; sourceTree = "<group>"; };
+		938869171F1700DA009158B5 /* GGCommonKitMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGCommonKitMacros.h; sourceTree = "<group>"; };
+		938869191F1700DA009158B5 /* ArrayUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayUtils.h; sourceTree = "<group>"; };
+		9388691A1F1700DA009158B5 /* ArrayUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayUtils.m; sourceTree = "<group>"; };
+		9388691B1F1700DA009158B5 /* AutorotateNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutorotateNavigationController.h; sourceTree = "<group>"; };
+		9388691C1F1700DA009158B5 /* AutorotateNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutorotateNavigationController.m; sourceTree = "<group>"; };
+		9388691D1F1700DA009158B5 /* GGDatePickerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGDatePickerHelper.h; sourceTree = "<group>"; };
+		9388691E1F1700DA009158B5 /* GGDatePickerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGDatePickerHelper.m; sourceTree = "<group>"; };
+		9388691F1F1700DA009158B5 /* GGImagePickerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGImagePickerHelper.h; sourceTree = "<group>"; };
+		938869201F1700DA009158B5 /* GGImagePickerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGImagePickerHelper.m; sourceTree = "<group>"; };
+		938869211F1700DA009158B5 /* GGNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGNavigationController.h; sourceTree = "<group>"; };
+		938869221F1700DA009158B5 /* GGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGNavigationController.m; sourceTree = "<group>"; };
+		938869231F1700DA009158B5 /* PortraitNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortraitNavigationController.h; sourceTree = "<group>"; };
+		938869241F1700DA009158B5 /* PortraitNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortraitNavigationController.m; sourceTree = "<group>"; };
+		938869361F17019A009158B5 /* FTHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHomeViewController.h; sourceTree = "<group>"; };
+		938869371F17019A009158B5 /* FTHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHomeViewController.m; sourceTree = "<group>"; };
+		938869381F17019A009158B5 /* FTHomeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FTHomeViewController.storyboard; sourceTree = "<group>"; };
+		9388693B1F1701BE009158B5 /* GGUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGUtil.h; sourceTree = "<group>"; };
+		9388693C1F1701BE009158B5 /* GGUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGUtil.m; sourceTree = "<group>"; };
+		9388693D1F1701BE009158B5 /* UIViewController+NavItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavItem.h"; sourceTree = "<group>"; };
+		9388693E1F1701BE009158B5 /* UIViewController+NavItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavItem.m"; sourceTree = "<group>"; };
+		938869411F1701DF009158B5 /* FTFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFormViewController.h; sourceTree = "<group>"; };
+		938869421F1701DF009158B5 /* FTFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFormViewController.m; sourceTree = "<group>"; };
+		938869431F1701DF009158B5 /* FTFormViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FTFormViewController.storyboard; sourceTree = "<group>"; };
+		938869471F1705F7009158B5 /* FTFormTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFormTableViewCell.h; sourceTree = "<group>"; };
+		938869481F1705F7009158B5 /* FTFormTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFormTableViewCell.m; sourceTree = "<group>"; };
+		9388694A1F170658009158B5 /* FTFormItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFormItemCollectionViewCell.h; sourceTree = "<group>"; };
+		9388694B1F170658009158B5 /* FTFormItemCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFormItemCollectionViewCell.m; sourceTree = "<group>"; };
+		9388694E1F170C65009158B5 /* FTListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTListTableViewCell.h; sourceTree = "<group>"; };
+		9388694F1F170C65009158B5 /* FTListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTListTableViewCell.m; sourceTree = "<group>"; };
+		938869501F170C65009158B5 /* FTListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTListTableViewCell.xib; sourceTree = "<group>"; };
+		938869531F170C83009158B5 /* FTListCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTListCollectionViewCell.h; sourceTree = "<group>"; };
+		938869541F170C83009158B5 /* FTListCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTListCollectionViewCell.m; sourceTree = "<group>"; };
+		938869551F170C83009158B5 /* FTListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTListCollectionViewCell.xib; sourceTree = "<group>"; };
+		938869581F170E4E009158B5 /* FTListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTListViewController.h; sourceTree = "<group>"; };
+		938869591F170E4E009158B5 /* FTListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTListViewController.m; sourceTree = "<group>"; };
+		9388695A1F170E4E009158B5 /* FTListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FTListViewController.storyboard; sourceTree = "<group>"; };
+		9388695D1F171221009158B5 /* FTCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTCollectionViewController.h; sourceTree = "<group>"; };
+		9388695E1F171221009158B5 /* FTCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTCollectionViewController.m; sourceTree = "<group>"; };
+		938869601F1716DB009158B5 /* FTFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFormView.h; sourceTree = "<group>"; };
+		938869611F1716DB009158B5 /* FTFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFormView.m; sourceTree = "<group>"; };
+		938869631F174338009158B5 /* FTFormModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFormModel.h; sourceTree = "<group>"; };
+		938869641F174338009158B5 /* FTFormModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFormModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		938868C31F1700AA009158B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				938868F31F1700AA009158B5 /* libsqlite3.dylib in Frameworks */,
+				6CCCFA77BF05ADFCFEFBC390 /* libPods-FormTableDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5678C63C0E3E25537CA99DDF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1169560A9F10A37711C8D643 /* Pods-FormTableDemo.app store.xcconfig */,
+				0FB06384735B61AB3E70C7F5 /* Pods-FormTableDemo.debug.xcconfig */,
+				86B8CBCA81844B6ECC5F5A59 /* Pods-FormTableDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		798F38D6468F24CBB6466451 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79BB828E2A658843008EE310 /* libPods-FormTableDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		938868BD1F1700AA009158B5 = {
+			isa = PBXGroup;
+			children = (
+				938868C81F1700AA009158B5 /* FormTableDemo */,
+				938868C71F1700AA009158B5 /* Products */,
+				5678C63C0E3E25537CA99DDF /* Pods */,
+				798F38D6468F24CBB6466451 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		938868C71F1700AA009158B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				938868C61F1700AA009158B5 /* FormTableDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		938868C81F1700AA009158B5 /* FormTableDemo */ = {
+			isa = PBXGroup;
+			children = (
+				938868D91F1700AA009158B5 /* app */,
+				938868DF1F1700AA009158B5 /* config */,
+				938868F11F1700AA009158B5 /* dylib */,
+				938868E21F1700AA009158B5 /* ext */,
+				938868E91F1700AA009158B5 /* i18n */,
+				938868ED1F1700AA009158B5 /* resources */,
+				938868C91F1700AA009158B5 /* Supporting Files */,
+				938868EE1F1700AA009158B5 /* vendors */,
+				938868D01F1700AA009158B5 /* Xcconfig */,
+			);
+			path = FormTableDemo;
+			sourceTree = "<group>";
+		};
+		938868C91F1700AA009158B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				938868CE1F1700AA009158B5 /* Podfile */,
+				938868CA1F1700AA009158B5 /* Info.plist */,
+				938868CB1F1700AA009158B5 /* Prefix.pch */,
+				938868CC1F1700AA009158B5 /* main.m */,
+				938868D81F1700AA009158B5 /* Entitlements.entitlements */,
+				938868EA1F1700AA009158B5 /* AppDelegate.h */,
+				938868EB1F1700AA009158B5 /* AppDelegate.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		938868D01F1700AA009158B5 /* Xcconfig */ = {
+			isa = PBXGroup;
+			children = (
+				938868D11F1700AA009158B5 /* Staging.xcconfig */,
+				938868D21F1700AA009158B5 /* ProductionInhouse.xcconfig */,
+				938868D31F1700AA009158B5 /* AS.xcconfig */,
+				938868D41F1700AA009158B5 /* InsideConfig */,
+			);
+			name = Xcconfig;
+			sourceTree = "<group>";
+		};
+		938868D41F1700AA009158B5 /* InsideConfig */ = {
+			isa = PBXGroup;
+			children = (
+				938868D51F1700AA009158B5 /* StagingPrivate.xcconfig */,
+				938868D61F1700AA009158B5 /* ProductionPrivate.xcconfig */,
+				938868D71F1700AA009158B5 /* ASPrivate.xcconfig */,
+			);
+			name = InsideConfig;
+			sourceTree = "<group>";
+		};
+		938868D91F1700AA009158B5 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				938868DA1F1700AA009158B5 /* apis */,
+				938868DB1F1700AA009158B5 /* controllers */,
+				938868DC1F1700AA009158B5 /* models */,
+				938868DD1F1700AA009158B5 /* modules */,
+				938868DE1F1700AA009158B5 /* views */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		938868DA1F1700AA009158B5 /* apis */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = apis;
+			sourceTree = "<group>";
+		};
+		938868DB1F1700AA009158B5 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				938869361F17019A009158B5 /* FTHomeViewController.h */,
+				938869371F17019A009158B5 /* FTHomeViewController.m */,
+				938869381F17019A009158B5 /* FTHomeViewController.storyboard */,
+				938869411F1701DF009158B5 /* FTFormViewController.h */,
+				938869421F1701DF009158B5 /* FTFormViewController.m */,
+				938869431F1701DF009158B5 /* FTFormViewController.storyboard */,
+				938869581F170E4E009158B5 /* FTListViewController.h */,
+				938869591F170E4E009158B5 /* FTListViewController.m */,
+				9388695A1F170E4E009158B5 /* FTListViewController.storyboard */,
+				9388695D1F171221009158B5 /* FTCollectionViewController.h */,
+				9388695E1F171221009158B5 /* FTCollectionViewController.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		938868DC1F1700AA009158B5 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		938868DD1F1700AA009158B5 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		938868DE1F1700AA009158B5 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				9388694D1F170C26009158B5 /* commen */,
+				938869461F1705C9009158B5 /* form */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		938868DF1F1700AA009158B5 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				938868E01F1700AA009158B5 /* APIAddress.h */,
+				938868E11F1700AA009158B5 /* AppConfig.h */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		938868E21F1700AA009158B5 /* ext */ = {
+			isa = PBXGroup;
+			children = (
+				9388693B1F1701BE009158B5 /* GGUtil.h */,
+				9388693C1F1701BE009158B5 /* GGUtil.m */,
+				9388693D1F1701BE009158B5 /* UIViewController+NavItem.h */,
+				9388693E1F1701BE009158B5 /* UIViewController+NavItem.m */,
+			);
+			path = ext;
+			sourceTree = "<group>";
+		};
+		938868E91F1700AA009158B5 /* i18n */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = i18n;
+			sourceTree = "<group>";
+		};
+		938868ED1F1700AA009158B5 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				938868F41F1700AA009158B5 /* images.xcassets */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		938868EE1F1700AA009158B5 /* vendors */ = {
+			isa = PBXGroup;
+			children = (
+				938868FD1F1700DA009158B5 /* GGCommonKit */,
+				938868EF1F1700AA009158B5 /* constant */,
+				938868F01F1700AA009158B5 /* modifiable */,
+			);
+			path = vendors;
+			sourceTree = "<group>";
+		};
+		938868EF1F1700AA009158B5 /* constant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = constant;
+			sourceTree = "<group>";
+		};
+		938868F01F1700AA009158B5 /* modifiable */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = modifiable;
+			sourceTree = "<group>";
+		};
+		938868F11F1700AA009158B5 /* dylib */ = {
+			isa = PBXGroup;
+			children = (
+				938868F21F1700AA009158B5 /* libsqlite3.dylib */,
+			);
+			name = dylib;
+			sourceTree = "<group>";
+		};
+		938868FD1F1700DA009158B5 /* GGCommonKit */ = {
+			isa = PBXGroup;
+			children = (
+				938868FE1F1700DA009158B5 /* Extensions */,
+				938869151F1700DA009158B5 /* GGCommonKit.h */,
+				938869161F1700DA009158B5 /* GGCommonKitMacros */,
+				938869181F1700DA009158B5 /* Util */,
+			);
+			path = GGCommonKit;
+			sourceTree = "<group>";
+		};
+		938868FE1F1700DA009158B5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				938868FF1F1700DA009158B5 /* NSObject+AutoDescription.h */,
+				938869001F1700DA009158B5 /* NSObject+AutoDescription.m */,
+				938869011F1700DA009158B5 /* UIActionSheet+Blocks.h */,
+				938869021F1700DA009158B5 /* UIActionSheet+Blocks.m */,
+				938869031F1700DA009158B5 /* UIAlertView+Blocks.h */,
+				938869041F1700DA009158B5 /* UIAlertView+Blocks.m */,
+				938869051F1700DA009158B5 /* UIButton+ActivityIndicatorView.h */,
+				938869061F1700DA009158B5 /* UIButton+ActivityIndicatorView.m */,
+				938869071F1700DA009158B5 /* UILabel+FormattedText.h */,
+				938869081F1700DA009158B5 /* UILabel+FormattedText.m */,
+				938869091F1700DA009158B5 /* UIStoryboard+Addition.h */,
+				9388690A1F1700DA009158B5 /* UIStoryboard+Addition.m */,
+				9388690B1F1700DA009158B5 /* UITableViewCell+Utils.h */,
+				9388690C1F1700DA009158B5 /* UITableViewCell+Utils.m */,
+				9388690D1F1700DA009158B5 /* UIView+Create.h */,
+				9388690E1F1700DA009158B5 /* UIView+Create.m */,
+				9388690F1F1700DA009158B5 /* UIView+LayoutConstraintHelper.h */,
+				938869101F1700DA009158B5 /* UIView+LayoutConstraintHelper.m */,
+				938869111F1700DA009158B5 /* UIView+Utils.h */,
+				938869121F1700DA009158B5 /* UIView+Utils.m */,
+				938869131F1700DA009158B5 /* UIViewController+Create.h */,
+				938869141F1700DA009158B5 /* UIViewController+Create.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		938869161F1700DA009158B5 /* GGCommonKitMacros */ = {
+			isa = PBXGroup;
+			children = (
+				938869171F1700DA009158B5 /* GGCommonKitMacros.h */,
+			);
+			path = GGCommonKitMacros;
+			sourceTree = "<group>";
+		};
+		938869181F1700DA009158B5 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				938869191F1700DA009158B5 /* ArrayUtils.h */,
+				9388691A1F1700DA009158B5 /* ArrayUtils.m */,
+				9388691B1F1700DA009158B5 /* AutorotateNavigationController.h */,
+				9388691C1F1700DA009158B5 /* AutorotateNavigationController.m */,
+				9388691D1F1700DA009158B5 /* GGDatePickerHelper.h */,
+				9388691E1F1700DA009158B5 /* GGDatePickerHelper.m */,
+				9388691F1F1700DA009158B5 /* GGImagePickerHelper.h */,
+				938869201F1700DA009158B5 /* GGImagePickerHelper.m */,
+				938869211F1700DA009158B5 /* GGNavigationController.h */,
+				938869221F1700DA009158B5 /* GGNavigationController.m */,
+				938869231F1700DA009158B5 /* PortraitNavigationController.h */,
+				938869241F1700DA009158B5 /* PortraitNavigationController.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		938869461F1705C9009158B5 /* form */ = {
+			isa = PBXGroup;
+			children = (
+				938869601F1716DB009158B5 /* FTFormView.h */,
+				938869611F1716DB009158B5 /* FTFormView.m */,
+				938869471F1705F7009158B5 /* FTFormTableViewCell.h */,
+				938869481F1705F7009158B5 /* FTFormTableViewCell.m */,
+				9388694A1F170658009158B5 /* FTFormItemCollectionViewCell.h */,
+				9388694B1F170658009158B5 /* FTFormItemCollectionViewCell.m */,
+				938869631F174338009158B5 /* FTFormModel.h */,
+				938869641F174338009158B5 /* FTFormModel.m */,
+			);
+			path = form;
+			sourceTree = "<group>";
+		};
+		9388694D1F170C26009158B5 /* commen */ = {
+			isa = PBXGroup;
+			children = (
+				9388694E1F170C65009158B5 /* FTListTableViewCell.h */,
+				9388694F1F170C65009158B5 /* FTListTableViewCell.m */,
+				938869501F170C65009158B5 /* FTListTableViewCell.xib */,
+				938869531F170C83009158B5 /* FTListCollectionViewCell.h */,
+				938869541F170C83009158B5 /* FTListCollectionViewCell.m */,
+				938869551F170C83009158B5 /* FTListCollectionViewCell.xib */,
+			);
+			path = commen;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		938868C51F1700AA009158B5 /* FormTableDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 938868F91F1700AA009158B5 /* Build configuration list for PBXNativeTarget "FormTableDemo" */;
+			buildPhases = (
+				458DD0920793CFC4C67451C5 /* [CP] Check Pods Manifest.lock */,
+				938868C21F1700AA009158B5 /* Sources */,
+				938868C31F1700AA009158B5 /* Frameworks */,
+				938868C41F1700AA009158B5 /* Resources */,
+				8DFCCE857DAEBF1BBE5F40A6 /* [CP] Embed Pods Frameworks */,
+				7CFBF5A4A0A5CDA593862826 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FormTableDemo;
+			productName = FormTableDemo;
+			productReference = 938868C61F1700AA009158B5 /* FormTableDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		938868BE1F1700AA009158B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FT;
+				LastUpgradeCheck = 0830;
+				TargetAttributes = {
+					938868C51F1700AA009158B5 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 938868C11F1700AA009158B5 /* Build configuration list for PBXProject "FormTableDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 938868BD1F1700AA009158B5;
+			productRefGroup = 938868C71F1700AA009158B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				938868C51F1700AA009158B5 /* FormTableDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		938868C41F1700AA009158B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				938868CF1F1700AA009158B5 /* Podfile in Resources */,
+				9388693A1F17019A009158B5 /* FTHomeViewController.storyboard in Resources */,
+				938869571F170C83009158B5 /* FTListCollectionViewCell.xib in Resources */,
+				938868F51F1700AA009158B5 /* images.xcassets in Resources */,
+				938869521F170C65009158B5 /* FTListTableViewCell.xib in Resources */,
+				938869451F1701DF009158B5 /* FTFormViewController.storyboard in Resources */,
+				9388695C1F170E4E009158B5 /* FTListViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		458DD0920793CFC4C67451C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7CFBF5A4A0A5CDA593862826 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FormTableDemo/Pods-FormTableDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DFCCE857DAEBF1BBE5F40A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FormTableDemo/Pods-FormTableDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		938868C21F1700AA009158B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9388692D1F1700DA009158B5 /* UIView+LayoutConstraintHelper.m in Sources */,
+				938869341F1700DA009158B5 /* GGNavigationController.m in Sources */,
+				9388695B1F170E4E009158B5 /* FTListViewController.m in Sources */,
+				938868EC1F1700AA009158B5 /* AppDelegate.m in Sources */,
+				938869261F1700DA009158B5 /* UIActionSheet+Blocks.m in Sources */,
+				938869281F1700DA009158B5 /* UIButton+ActivityIndicatorView.m in Sources */,
+				938869351F1700DA009158B5 /* PortraitNavigationController.m in Sources */,
+				938869311F1700DA009158B5 /* AutorotateNavigationController.m in Sources */,
+				938869291F1700DA009158B5 /* UILabel+FormattedText.m in Sources */,
+				9388695F1F171221009158B5 /* FTCollectionViewController.m in Sources */,
+				9388692A1F1700DA009158B5 /* UIStoryboard+Addition.m in Sources */,
+				938869391F17019A009158B5 /* FTHomeViewController.m in Sources */,
+				9388693F1F1701BE009158B5 /* GGUtil.m in Sources */,
+				938869511F170C65009158B5 /* FTListTableViewCell.m in Sources */,
+				938868CD1F1700AA009158B5 /* main.m in Sources */,
+				938869301F1700DA009158B5 /* ArrayUtils.m in Sources */,
+				9388692C1F1700DA009158B5 /* UIView+Create.m in Sources */,
+				9388692E1F1700DA009158B5 /* UIView+Utils.m in Sources */,
+				938869651F174338009158B5 /* FTFormModel.m in Sources */,
+				938869251F1700DA009158B5 /* NSObject+AutoDescription.m in Sources */,
+				938869441F1701DF009158B5 /* FTFormViewController.m in Sources */,
+				938869491F1705F7009158B5 /* FTFormTableViewCell.m in Sources */,
+				9388694C1F170658009158B5 /* FTFormItemCollectionViewCell.m in Sources */,
+				9388692F1F1700DA009158B5 /* UIViewController+Create.m in Sources */,
+				938869401F1701BE009158B5 /* UIViewController+NavItem.m in Sources */,
+				938869621F1716DB009158B5 /* FTFormView.m in Sources */,
+				938869321F1700DA009158B5 /* GGDatePickerHelper.m in Sources */,
+				938869561F170C83009158B5 /* FTListCollectionViewCell.m in Sources */,
+				938869271F1700DA009158B5 /* UIAlertView+Blocks.m in Sources */,
+				9388692B1F1700DA009158B5 /* UITableViewCell+Utils.m in Sources */,
+				938869331F1700DA009158B5 /* GGImagePickerHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		938868F61F1700AA009158B5 /* App Store */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "FormTableDemo/Supporting Files/Entitlements.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)\"/**";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = APP_STORE;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)\"/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "\"$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)\"/**";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "App Store";
+		};
+		938868F71F1700AA009158B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "FormTableDemo/Supporting Files/Entitlements.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		938868F81F1700AA009158B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "FormTableDemo/Supporting Files/Entitlements.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)\"/**";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = AD_HOC;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)\"/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "\"$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)\"/**";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		938868FA1F1700AA009158B5 /* App Store */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1169560A9F10A37711C8D643 /* Pods-FormTableDemo.app store.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FormTableDemo/Supporting Files/Prefix.pch";
+				INFOPLIST_FILE = "FormTableDemo/Supporting Files/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.form.iphone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = "App Store";
+		};
+		938868FB1F1700AA009158B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FB06384735B61AB3E70C7F5 /* Pods-FormTableDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FormTableDemo/Supporting Files/Prefix.pch";
+				INFOPLIST_FILE = "FormTableDemo/Supporting Files/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.form.iphone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		938868FC1F1700AA009158B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86B8CBCA81844B6ECC5F5A59 /* Pods-FormTableDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FormTableDemo/Supporting Files/Prefix.pch";
+				INFOPLIST_FILE = "FormTableDemo/Supporting Files/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.form.iphone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		938868C11F1700AA009158B5 /* Build configuration list for PBXProject "FormTableDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				938868F61F1700AA009158B5 /* App Store */,
+				938868F71F1700AA009158B5 /* Debug */,
+				938868F81F1700AA009158B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		938868F91F1700AA009158B5 /* Build configuration list for PBXNativeTarget "FormTableDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				938868FA1F1700AA009158B5 /* App Store */,
+				938868FB1F1700AA009158B5 /* Debug */,
+				938868FC1F1700AA009158B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 938868BE1F1700AA009158B5 /* Project object */;
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>APIHost</key>
+	<string>http://${APIHost}</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>${ProductDisplayName}</string>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.0</string>
+	<key>CFBundleVersion</key>
+	<string>0</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>ShareSDKAppKey</key>
+	<string>${ShareSDKAppKey}</string>
+	<key>ShareSDKAppSecret</key>
+	<string>${ShareSDKAppSecret}</string>
+	<key>SinaWeiboAppKey</key>
+	<string>${SinaWeiboAppKey}</string>
+	<key>SinaWeiboAppSecret</key>
+	<string>${SinaWeiboAppSecret}</string>
+	<key>TencentAppID</key>
+	<string>${TencentAppID}</string>
+	<key>TencentAppKey</key>
+	<string>${TencentAppKey}</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>WXAppID</key>
+	<string>${WXAppID}</string>
+	<key>WXAppSecret</key>
+	<string>${WXAppSecret}</string>
+</dict>
+</plist>

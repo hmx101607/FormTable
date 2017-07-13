@@ -1,0 +1,8 @@
+
+#include "./InsideConfig/ASPrivate.xcconfig"
+#include "../../Pods/Target Support Files/Pods-$(PRODUCT_NAME)/Pods-$(PRODUCT_NAME).app store.xcconfig"
+
+APIHost = 0
+QiNiuHost = 0
+BundleIdentifier = com.company.xxx.iphone
+ProductDisplayName = xxxx

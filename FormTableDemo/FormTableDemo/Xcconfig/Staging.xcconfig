@@ -1,0 +1,8 @@
+#include "./InsideConfig/StagingPrivate.xcconfig"
+#include "../../Pods/Target Support Files/Pods-$(PRODUCT_NAME)/Pods-$(PRODUCT_NAME).debug.xcconfig"
+
+APIHost = 120.25.58.158:8088
+QiNiuHost = 0
+BundleIdentifier = hk.ganguo.xxx.staging
+ProductDisplayName = xxxx
+

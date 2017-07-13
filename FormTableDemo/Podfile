@@ -1,0 +1,19 @@
+platform :ios, '8.0'
+inhibit_all_warnings!
+
+target 'FormTableDemo' do
+
+pod 'AFNetworking'
+pod 'PureLayout'
+pod 'FLEX'
+pod 'NYXImagesKit'
+pod 'MBProgressHUD'
+pod 'SDWebImage'
+pod 'uicontrol-blocks'
+pod 'INTULocationManager'
+pod 'YYKit'
+pod 'MLeaksFinder'
+
+
+end
+
