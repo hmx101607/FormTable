@@ -8,8 +8,6 @@
 
 #import "FTHomeViewController.h"
 #import "FTFormViewController.h"
-#import "FTListViewController.h"
-#import "FTCollectionViewController.h"
 
 @interface FTHomeViewController ()
 
@@ -34,20 +32,8 @@
     FTFormViewController *homeVC = [FTFormViewController create];
     
     [self.navigationController pushViewController:homeVC animated:YES];
-    
 }
 
-- (IBAction)listAction:(UIButton *)sender {
-    FTListViewController *listVC = [FTListViewController create];
-    
-    [self.navigationController pushViewController:listVC animated:YES];
-}
-
-- (IBAction)collectionViewAction:(UIButton *)sender {
-    FTCollectionViewController *collectionVC = [FTCollectionViewController new];
-    
-    [self.navigationController pushViewController:collectionVC animated:YES];
-}
 
 
 @end

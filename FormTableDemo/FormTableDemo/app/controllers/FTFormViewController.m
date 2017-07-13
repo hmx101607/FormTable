@@ -7,69 +7,55 @@
 //
 
 #import "FTFormViewController.h"
-#import "FTFormTableViewCell.h"
+#import "FTFormView.h"
+#import "FTFormModel.h"
 
 @interface FTFormViewController ()
-<
-UITableViewDelegate,
-UITableViewDataSource
->
 
-@property (strong, nonatomic) UITableView *tableView;
+/** <##> */
+@property (strong, nonatomic) FTFormView *formView;
+
+/** <##> */
+@property (strong, nonatomic) NSMutableArray *itemArray;
 
 @end
 
 @implementation FTFormViewController
 
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self setupTableView];
-}
-
-- (void)setupTableView {
-    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStylePlain];
-    [self.view addSubview:tableView];
-    self.tableView = tableView;
-    tableView.delegate = self;
-    tableView.dataSource = self;
-    [tableView registerClass:[FTFormTableViewCell class] forCellReuseIdentifier:NSStringFromClass([FTFormTableViewCell class])];
-    tableView.tableFooterView = [UIView new];
-}
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    FTFormView *formView = [FTFormView new];
+    FTFormModel *formModel = self.itemArray.firstObject;
+    formView.frame = CGRectMake(0, 64.f, SCREEN_WIDTH, formModel.rowHeight * self.itemArray.count);
+    formView.formModelArray = [self.itemArray copy];
+    [self.view addSubview:formView];
 }
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    FTFormTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([FTFormTableViewCell class]) forIndexPath:indexPath];
-    if (!cell) {
-        cell = [[FTFormTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([FTFormTableViewCell class])];
+- (NSMutableArray *)itemArray {
+    if (!_itemArray) {
+        _itemArray = [NSMutableArray array];
+        
+        for (NSInteger j = 0; j < 10; j++) {
+            FTFormModel *formModel = [[FTFormModel alloc] init];
+            formModel.rowHeight = 40.f;
+            NSMutableArray *formArray = [NSMutableArray array];
+            for (NSInteger i = 0; i < 4; i++) {
+                FTFormItemModel *formItemModel = [[FTFormItemModel alloc] init];
+                formItemModel.widthRate = i + 1;
+                formItemModel.title = [NSString stringWithFormat:@"%li",i];
+                if (j == 0) {
+                    formItemModel.textColor = [UIColor blueColor];
+                }
+                [formArray addObject:formItemModel];
+            }
+            formModel.formItemArray = [formArray copy];
+            [_itemArray addObject:formModel];
+        }
     }
-    cell.backgroundColor = indexPath.row % 2 == 0 ? [UIColor greenColor] : [UIColor blueColor];
-    return cell;
+    return _itemArray;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 50.f;
-}
-
-
-
-
-
-
-
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-}
 
 @end

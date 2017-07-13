@@ -28,29 +28,11 @@
                                     <action selector="formAction:" destination="TKq-7Q-z4C" eventType="touchUpInside" id="7RV-Dk-CvK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mp-vI-Ooz">
-                                <rect key="frame" x="172" y="378" width="30" height="30"/>
-                                <state key="normal" title="List"/>
-                                <connections>
-                                    <action selector="listAction:" destination="TKq-7Q-z4C" eventType="touchUpInside" id="nS5-gH-mIE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7F-l4-GjT">
-                                <rect key="frame" x="137.5" y="438" width="99" height="30"/>
-                                <state key="normal" title="collectionView"/>
-                                <connections>
-                                    <action selector="collectionViewAction:" destination="TKq-7Q-z4C" eventType="touchUpInside" id="HR7-hK-uo6"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="l7F-l4-GjT" firstAttribute="top" secondItem="7mp-vI-Ooz" secondAttribute="bottom" constant="30" id="GIv-Ln-VGN"/>
-                            <constraint firstItem="7mp-vI-Ooz" firstAttribute="top" secondItem="n1s-q6-4nR" secondAttribute="bottom" constant="30" id="JVd-tO-fLV"/>
                             <constraint firstItem="n1s-q6-4nR" firstAttribute="centerX" secondItem="cOb-So-n25" secondAttribute="centerX" id="ed4-C6-ddM"/>
-                            <constraint firstItem="7mp-vI-Ooz" firstAttribute="centerX" secondItem="cOb-So-n25" secondAttribute="centerX" id="i9X-sJ-APm"/>
                             <constraint firstItem="n1s-q6-4nR" firstAttribute="centerY" secondItem="cOb-So-n25" secondAttribute="centerY" id="wPc-yP-AXf"/>
-                            <constraint firstItem="l7F-l4-GjT" firstAttribute="centerX" secondItem="cOb-So-n25" secondAttribute="centerX" id="zsE-fm-8pO"/>
                         </constraints>
                     </view>
                 </viewController>

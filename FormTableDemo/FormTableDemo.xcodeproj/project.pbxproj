@@ -38,13 +38,6 @@
 		938869451F1701DF009158B5 /* FTFormViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 938869431F1701DF009158B5 /* FTFormViewController.storyboard */; };
 		938869491F1705F7009158B5 /* FTFormTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 938869481F1705F7009158B5 /* FTFormTableViewCell.m */; };
 		9388694C1F170658009158B5 /* FTFormItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9388694B1F170658009158B5 /* FTFormItemCollectionViewCell.m */; };
-		938869511F170C65009158B5 /* FTListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9388694F1F170C65009158B5 /* FTListTableViewCell.m */; };
-		938869521F170C65009158B5 /* FTListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 938869501F170C65009158B5 /* FTListTableViewCell.xib */; };
-		938869561F170C83009158B5 /* FTListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 938869541F170C83009158B5 /* FTListCollectionViewCell.m */; };
-		938869571F170C83009158B5 /* FTListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 938869551F170C83009158B5 /* FTListCollectionViewCell.xib */; };
-		9388695B1F170E4E009158B5 /* FTListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938869591F170E4E009158B5 /* FTListViewController.m */; };
-		9388695C1F170E4E009158B5 /* FTListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9388695A1F170E4E009158B5 /* FTListViewController.storyboard */; };
-		9388695F1F171221009158B5 /* FTCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9388695E1F171221009158B5 /* FTCollectionViewController.m */; };
 		938869621F1716DB009158B5 /* FTFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 938869611F1716DB009158B5 /* FTFormView.m */; };
 		938869651F174338009158B5 /* FTFormModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 938869641F174338009158B5 /* FTFormModel.m */; };
 /* End PBXBuildFile section */
@@ -122,17 +115,6 @@
 		938869481F1705F7009158B5 /* FTFormTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFormTableViewCell.m; sourceTree = "<group>"; };
 		9388694A1F170658009158B5 /* FTFormItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFormItemCollectionViewCell.h; sourceTree = "<group>"; };
 		9388694B1F170658009158B5 /* FTFormItemCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFormItemCollectionViewCell.m; sourceTree = "<group>"; };
-		9388694E1F170C65009158B5 /* FTListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTListTableViewCell.h; sourceTree = "<group>"; };
-		9388694F1F170C65009158B5 /* FTListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTListTableViewCell.m; sourceTree = "<group>"; };
-		938869501F170C65009158B5 /* FTListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTListTableViewCell.xib; sourceTree = "<group>"; };
-		938869531F170C83009158B5 /* FTListCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTListCollectionViewCell.h; sourceTree = "<group>"; };
-		938869541F170C83009158B5 /* FTListCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTListCollectionViewCell.m; sourceTree = "<group>"; };
-		938869551F170C83009158B5 /* FTListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTListCollectionViewCell.xib; sourceTree = "<group>"; };
-		938869581F170E4E009158B5 /* FTListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTListViewController.h; sourceTree = "<group>"; };
-		938869591F170E4E009158B5 /* FTListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTListViewController.m; sourceTree = "<group>"; };
-		9388695A1F170E4E009158B5 /* FTListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FTListViewController.storyboard; sourceTree = "<group>"; };
-		9388695D1F171221009158B5 /* FTCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTCollectionViewController.h; sourceTree = "<group>"; };
-		9388695E1F171221009158B5 /* FTCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTCollectionViewController.m; sourceTree = "<group>"; };
 		938869601F1716DB009158B5 /* FTFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFormView.h; sourceTree = "<group>"; };
 		938869611F1716DB009158B5 /* FTFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFormView.m; sourceTree = "<group>"; };
 		938869631F174338009158B5 /* FTFormModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFormModel.h; sourceTree = "<group>"; };
@@ -267,11 +249,6 @@
 				938869411F1701DF009158B5 /* FTFormViewController.h */,
 				938869421F1701DF009158B5 /* FTFormViewController.m */,
 				938869431F1701DF009158B5 /* FTFormViewController.storyboard */,
-				938869581F170E4E009158B5 /* FTListViewController.h */,
-				938869591F170E4E009158B5 /* FTListViewController.m */,
-				9388695A1F170E4E009158B5 /* FTListViewController.storyboard */,
-				9388695D1F171221009158B5 /* FTCollectionViewController.h */,
-				9388695E1F171221009158B5 /* FTCollectionViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -293,7 +270,6 @@
 		938868DE1F1700AA009158B5 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				9388694D1F170C26009158B5 /* commen */,
 				938869461F1705C9009158B5 /* form */,
 			);
 			path = views;
@@ -448,19 +424,6 @@
 			path = form;
 			sourceTree = "<group>";
 		};
-		9388694D1F170C26009158B5 /* commen */ = {
-			isa = PBXGroup;
-			children = (
-				9388694E1F170C65009158B5 /* FTListTableViewCell.h */,
-				9388694F1F170C65009158B5 /* FTListTableViewCell.m */,
-				938869501F170C65009158B5 /* FTListTableViewCell.xib */,
-				938869531F170C83009158B5 /* FTListCollectionViewCell.h */,
-				938869541F170C83009158B5 /* FTListCollectionViewCell.m */,
-				938869551F170C83009158B5 /* FTListCollectionViewCell.xib */,
-			);
-			path = commen;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -523,11 +486,8 @@
 			files = (
 				938868CF1F1700AA009158B5 /* Podfile in Resources */,
 				9388693A1F17019A009158B5 /* FTHomeViewController.storyboard in Resources */,
-				938869571F170C83009158B5 /* FTListCollectionViewCell.xib in Resources */,
 				938868F51F1700AA009158B5 /* images.xcassets in Resources */,
-				938869521F170C65009158B5 /* FTListTableViewCell.xib in Resources */,
 				938869451F1701DF009158B5 /* FTFormViewController.storyboard in Resources */,
-				9388695C1F170E4E009158B5 /* FTListViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,18 +548,15 @@
 			files = (
 				9388692D1F1700DA009158B5 /* UIView+LayoutConstraintHelper.m in Sources */,
 				938869341F1700DA009158B5 /* GGNavigationController.m in Sources */,
-				9388695B1F170E4E009158B5 /* FTListViewController.m in Sources */,
 				938868EC1F1700AA009158B5 /* AppDelegate.m in Sources */,
 				938869261F1700DA009158B5 /* UIActionSheet+Blocks.m in Sources */,
 				938869281F1700DA009158B5 /* UIButton+ActivityIndicatorView.m in Sources */,
 				938869351F1700DA009158B5 /* PortraitNavigationController.m in Sources */,
 				938869311F1700DA009158B5 /* AutorotateNavigationController.m in Sources */,
 				938869291F1700DA009158B5 /* UILabel+FormattedText.m in Sources */,
-				9388695F1F171221009158B5 /* FTCollectionViewController.m in Sources */,
 				9388692A1F1700DA009158B5 /* UIStoryboard+Addition.m in Sources */,
 				938869391F17019A009158B5 /* FTHomeViewController.m in Sources */,
 				9388693F1F1701BE009158B5 /* GGUtil.m in Sources */,
-				938869511F170C65009158B5 /* FTListTableViewCell.m in Sources */,
 				938868CD1F1700AA009158B5 /* main.m in Sources */,
 				938869301F1700DA009158B5 /* ArrayUtils.m in Sources */,
 				9388692C1F1700DA009158B5 /* UIView+Create.m in Sources */,
@@ -613,7 +570,6 @@
 				938869401F1701BE009158B5 /* UIViewController+NavItem.m in Sources */,
 				938869621F1716DB009158B5 /* FTFormView.m in Sources */,
 				938869321F1700DA009158B5 /* GGDatePickerHelper.m in Sources */,
-				938869561F170C83009158B5 /* FTListCollectionViewCell.m in Sources */,
 				938869271F1700DA009158B5 /* UIAlertView+Blocks.m in Sources */,
 				9388692B1F1700DA009158B5 /* UITableViewCell+Utils.m in Sources */,
 				938869331F1700DA009158B5 /* GGImagePickerHelper.m in Sources */,
