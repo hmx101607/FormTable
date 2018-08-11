@@ -1,15 +1,15 @@
  这是一个表格展示的轮子，在项目开发中，我们偶尔会用到表格来展示一些数据，但是在iOS的现有控件中，对于表格支持的不好，应该说并没有支持，所以，造了一个表格的轮子，根据数据驱动实现不同的表格样式及交互事件，先来看看效果
  
  图一：
-<img src="http://7qnbrb.com1.z0.glb.clouddn.com/form1.png" width="320"><br/>
+<img src="http://7qnbrb.com1.z0.glb.clouddn.com/form1.png" width="320">
 
 
 图二：
-<img src="http://7qnbrb.com1.z0.glb.clouddn.com/form2.png" width="320"><br/>
+<img src="http://7qnbrb.com1.z0.glb.clouddn.com/form2.png" width="320">
 
 
 图三：
-<img src="http://7qnbrb.com1.z0.glb.clouddn.com/form3.png" width="320"><br/>
+<img src="http://7qnbrb.com1.z0.glb.clouddn.com/form3.png" width="320">
 
 还算比较简单，由于项目中还存在抬头数量不同的情况(图二与图三)，以及对特定的item具有点击事件，所以如果没有一个通用的轮子，在做UI的时候，还是比较麻烦的。
 
