@@ -9,7 +9,7 @@
 #import "FTFormViewController.h"
 #import "FTFormView.h"
 #import "FTFormModel.h"
-#import "HZIncidentStatisticsInfoModel.h"
+#import "FTUtil.h"
 
 @interface FTFormViewController ()
 
@@ -54,25 +54,13 @@
     self.formView = formView;
     [self.view addSubview:formView];
     
-    NSArray *json = [FTFormViewController readLocalFileWithName:@"json"];
+    NSArray *json = [FTUtil readLocalFileWithName:@"json" fileType:@"txt"];
     [self.formContentList addObjectsFromArray:json];
     [self configFormDataSource];
     //获取第一个model,取出设定的行高，计算出总高度，如果每行的高度不同，则需要循环获取
     FTFormModel *formModel = self.formItemList.firstObject;
     formView.frame = CGRectMake(0, 64.f, SCREEN_WIDTH, formModel.rowHeight * self.formItemList.count);
-
-
 }
-
-+ (NSArray *)readLocalFileWithName:(NSString *)name {
-    // 获取文件路径
-    NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@"txt"];
-    // 将文件数据化
-    NSData *data = [[NSData alloc] initWithContentsOfFile:path];
-    // 对数据进行JSON格式化并返回字典形式
-    return [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-}
-
 
 - (void) configFormDataSource {
     for (NSInteger i = 0; i < self.formContentList.count; i++) {
@@ -131,6 +119,17 @@
     [self.formView setFormModelArray:self.formItemList];
 }
 
+- (NSArray *)formTitleList {
+    if (!_formTitleList) {
+        _formTitleList = @[@{@"title":@"河道名称",@"widthRate":@(1)},
+                           @{@"title":@"受理数",@"widthRate":@(1)},
+                           @{@"title":@"处理数",@"widthRate":@(1)},
+                           @{@"title":@"结案数",@"widthRate":@(1)},
+                           @{@"title":@"处理率(%)",@"widthRate":@(1.5)}];
+    }
+    return _formTitleList;
+}
+
 - (NSMutableArray *)dataSource {
     if (!_dataSource) {
         _dataSource = [NSMutableArray array];
@@ -151,17 +150,6 @@
         
     }
     return _formContentList;
-}
-
-- (NSArray *)formTitleList {
-    if (!_formTitleList) {
-        _formTitleList = @[@{@"title":@"河道名称",@"widthRate":@(1)},
-                           @{@"title":@"受理数",@"widthRate":@(1)},
-                           @{@"title":@"处理数",@"widthRate":@(1)},
-                           @{@"title":@"结案数",@"widthRate":@(1)},
-                           @{@"title":@"处理率(%)",@"widthRate":@(1.5)}];
-    }
-    return _formTitleList;
 }
 
 @end

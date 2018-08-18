@@ -13,7 +13,7 @@
 		936EC4282128694F00688E6F /* FTFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 936EC4222128694E00688E6F /* FTFormView.m */; };
 		936EC4292128694F00688E6F /* FTFormTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 936EC4252128694F00688E6F /* FTFormTableViewCell.m */; };
 		936EC42A2128694F00688E6F /* FTFormItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 936EC4262128694F00688E6F /* FTFormItemCollectionViewCell.m */; };
-		936EC43021286BD600688E6F /* HZIncidentStatisticsInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 936EC42E21286BD600688E6F /* HZIncidentStatisticsInfoModel.m */; };
+		936EC434212885DF00688E6F /* FTUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 936EC433212885DF00688E6F /* FTUtil.m */; };
 		938868CD1F1700AA009158B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 938868CC1F1700AA009158B5 /* main.m */; };
 		938868CF1F1700AA009158B5 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 938868CE1F1700AA009158B5 /* Podfile */; };
 		938868EC1F1700AA009158B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 938868EB1F1700AA009158B5 /* AppDelegate.m */; };
@@ -58,8 +58,8 @@
 		936EC4242128694F00688E6F /* FTFormTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFormTableViewCell.h; sourceTree = "<group>"; };
 		936EC4252128694F00688E6F /* FTFormTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFormTableViewCell.m; sourceTree = "<group>"; };
 		936EC4262128694F00688E6F /* FTFormItemCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFormItemCollectionViewCell.m; sourceTree = "<group>"; };
-		936EC42E21286BD600688E6F /* HZIncidentStatisticsInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZIncidentStatisticsInfoModel.m; sourceTree = "<group>"; };
-		936EC42F21286BD600688E6F /* HZIncidentStatisticsInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZIncidentStatisticsInfoModel.h; sourceTree = "<group>"; };
+		936EC432212885DF00688E6F /* FTUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTUtil.h; sourceTree = "<group>"; };
+		936EC433212885DF00688E6F /* FTUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTUtil.m; sourceTree = "<group>"; };
 		938868C61F1700AA009158B5 /* FormTableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormTableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		938868CA1F1700AA009158B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		938868CB1F1700AA009158B5 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
@@ -155,6 +155,15 @@
 				79BB828E2A658843008EE310 /* libPods-FormTableDemo.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		936EC431212885B300688E6F /* common */ = {
+			isa = PBXGroup;
+			children = (
+				936EC432212885DF00688E6F /* FTUtil.h */,
+				936EC433212885DF00688E6F /* FTUtil.m */,
+			);
+			path = common;
 			sourceTree = "<group>";
 		};
 		938868BD1F1700AA009158B5 = {
@@ -262,8 +271,6 @@
 		938868DC1F1700AA009158B5 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				936EC42F21286BD600688E6F /* HZIncidentStatisticsInfoModel.h */,
-				936EC42E21286BD600688E6F /* HZIncidentStatisticsInfoModel.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -271,6 +278,7 @@
 		938868DD1F1700AA009158B5 /* modules */ = {
 			isa = PBXGroup;
 			children = (
+				936EC431212885B300688E6F /* common */,
 			);
 			path = modules;
 			sourceTree = "<group>";
@@ -558,9 +566,9 @@
 				9388692D1F1700DA009158B5 /* UIView+LayoutConstraintHelper.m in Sources */,
 				938869341F1700DA009158B5 /* GGNavigationController.m in Sources */,
 				938868EC1F1700AA009158B5 /* AppDelegate.m in Sources */,
+				936EC434212885DF00688E6F /* FTUtil.m in Sources */,
 				938869261F1700DA009158B5 /* UIActionSheet+Blocks.m in Sources */,
 				938869281F1700DA009158B5 /* UIButton+ActivityIndicatorView.m in Sources */,
-				936EC43021286BD600688E6F /* HZIncidentStatisticsInfoModel.m in Sources */,
 				938869351F1700DA009158B5 /* PortraitNavigationController.m in Sources */,
 				938869311F1700DA009158B5 /* AutorotateNavigationController.m in Sources */,
 				936EC4272128694F00688E6F /* FTFormModel.m in Sources */,
