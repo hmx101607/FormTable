@@ -9,14 +9,39 @@
 #import "FTFormViewController.h"
 #import "FTFormView.h"
 #import "FTFormModel.h"
+#import "HZIncidentStatisticsInfoModel.h"
 
 @interface FTFormViewController ()
 
-/** <##> */
+/** 表格<##> */
 @property (strong, nonatomic) FTFormView *formView;
-
-/** <##> */
-@property (strong, nonatomic) NSMutableArray *itemArray;
+/** 表格总数据=表格头+表格内容 */
+@property (strong, nonatomic) NSMutableArray *formItemList;
+/** 表格头：原数据，未处理 */
+@property (strong, nonatomic) NSArray *formTitleList;
+/** 表格内容：原数据，未处理
+ {
+     aid = 270b0971a73d4002a6f61ddb753752f9;
+     cll = 0;
+     clz = 0;
+     dcl = 0;
+     rivertp = 1;
+     rvnm = "长江";
+     tss = 0;
+     ycl = 0;
+ }
+ */
+@property (strong, nonatomic) NSMutableArray *formContentList;
+/** 表格内容
+ <__NSArrayI 0x604000279140>(
+     长江,
+     0,
+     0,
+     0,
+     0
+ )
+ */
+@property (strong, nonatomic) NSMutableArray *dataSource;
 
 @end
 
@@ -26,36 +51,117 @@
 {
     [super viewDidLoad];
     FTFormView *formView = [FTFormView new];
-    FTFormModel *formModel = self.itemArray.firstObject;
-    formView.frame = CGRectMake(0, 64.f, SCREEN_WIDTH, formModel.rowHeight * self.itemArray.count);
-    formView.formModelArray = [self.itemArray copy];
+    self.formView = formView;
     [self.view addSubview:formView];
+    
+    NSArray *json = [FTFormViewController readLocalFileWithName:@"json"];
+    [self.formContentList addObjectsFromArray:json];
+    [self configFormDataSource];
+    //获取第一个model,取出设定的行高，计算出总高度，如果每行的高度不同，则需要循环获取
+    FTFormModel *formModel = self.formItemList.firstObject;
+    formView.frame = CGRectMake(0, 64.f, SCREEN_WIDTH, formModel.rowHeight * self.formItemList.count);
+
+
+}
+
++ (NSArray *)readLocalFileWithName:(NSString *)name {
+    // 获取文件路径
+    NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@"txt"];
+    // 将文件数据化
+    NSData *data = [[NSData alloc] initWithContentsOfFile:path];
+    // 对数据进行JSON格式化并返回字典形式
+    return [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
 }
 
 
-- (NSMutableArray *)itemArray {
-    if (!_itemArray) {
-        _itemArray = [NSMutableArray array];
-        
-        for (NSInteger j = 0; j < 10; j++) {
+- (void) configFormDataSource {
+    for (NSInteger i = 0; i < self.formContentList.count; i++) {
+        NSDictionary *formModelDic = self.formContentList[i];
+        [self.dataSource addObject:@[formModelDic[@"rvnm"], formModelDic[@"dcl"], formModelDic[@"clz"],formModelDic[@"ycl"], formModelDic[@"cll"]]];
+    }
+    [self configFormItemDataSource];
+}
+
+- (void) configFormItemDataSource {
+    [self.formItemList removeAllObjects];
+    {
+        //处理第一行表头数据
+        //外层model:处理行高，边距等整行的外观数据
+        FTFormModel *titleFormModel = [[FTFormModel alloc] init];
+        titleFormModel.rowHeight = 35.f;
+        titleFormModel.index = 0;
+        NSMutableArray *titleFormArray = [NSMutableArray array];
+        for (NSInteger i = 0; i < self.formTitleList.count; i++) {
+            //内层model:处理行内每个小块的样式，如文字居中，颜色，大小等
+            FTFormItemModel *formItemModel = [[FTFormItemModel alloc] init];
+            NSDictionary *dic = self.formTitleList[i];
+            formItemModel.widthRate = [dic[@"widthRate"] integerValue];
+            formItemModel.title = dic[@"title"];
+            formItemModel.textColor = UIColorHex(3691e5);
+            formItemModel.textAlignment = NSTextAlignmentCenter;
+            formItemModel.fontSize = 11.f;
+            [titleFormArray addObject:formItemModel];
+        }
+        titleFormModel.formItemArray = [titleFormArray copy];
+        [self.formItemList addObject:titleFormModel];
+    }
+    //+++++++++++++++++++++++++上面与下面在逻辑上其实是一致的：其实可以整合一下，这里为了简单理解，不整合了+++++++++++++++++++++++++
+    {
+        //除表头外的表格数据
+        for (NSInteger j = 0; j < self.dataSource.count; j++) {
             FTFormModel *formModel = [[FTFormModel alloc] init];
-            formModel.rowHeight = 40.f;
+            formModel.rowHeight = 35.f;
+            formModel.index = 0;
+            NSArray *array = self.dataSource[j];
             NSMutableArray *formArray = [NSMutableArray array];
-            for (NSInteger i = 0; i < 4; i++) {
+            for (NSInteger i = 0; i < self.formTitleList.count; i++) {
                 FTFormItemModel *formItemModel = [[FTFormItemModel alloc] init];
-                formItemModel.widthRate = i + 1;
-                formItemModel.title = [NSString stringWithFormat:@"%li",i];
-                if (j == 0) {
-                    formItemModel.textColor = [UIColor blueColor];
-                }
+                NSDictionary *dic = self.formTitleList[i];
+                formItemModel.widthRate = [dic[@"widthRate"] integerValue];
+                formItemModel.title = [NSString stringWithFormat:@"%@",array[i]];
+                formItemModel.textColor = UIColorHex(545454);
+                formItemModel.textAlignment = NSTextAlignmentCenter;
+                formItemModel.fontSize = 11.f;
                 [formArray addObject:formItemModel];
             }
             formModel.formItemArray = [formArray copy];
-            [_itemArray addObject:formModel];
+            [self.formItemList addObject:formModel];
         }
     }
-    return _itemArray;
+    [self.formView setFormModelArray:self.formItemList];
 }
 
+- (NSMutableArray *)dataSource {
+    if (!_dataSource) {
+        _dataSource = [NSMutableArray array];
+    }
+    return _dataSource;
+}
+
+- (NSMutableArray *)formItemList {
+    if (!_formItemList) {
+        _formItemList = [NSMutableArray array];
+    }
+    return _formItemList;
+}
+
+- (NSMutableArray *)formContentList {
+    if (!_formContentList) {
+        _formContentList = [NSMutableArray array];
+        
+    }
+    return _formContentList;
+}
+
+- (NSArray *)formTitleList {
+    if (!_formTitleList) {
+        _formTitleList = @[@{@"title":@"河道名称",@"widthRate":@(1)},
+                           @{@"title":@"受理数",@"widthRate":@(1)},
+                           @{@"title":@"处理数",@"widthRate":@(1)},
+                           @{@"title":@"结案数",@"widthRate":@(1)},
+                           @{@"title":@"处理率(%)",@"widthRate":@(1.5)}];
+    }
+    return _formTitleList;
+}
 
 @end

@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		6CCCFA77BF05ADFCFEFBC390 /* libPods-FormTableDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BB828E2A658843008EE310 /* libPods-FormTableDemo.a */; };
+		936EC41E212867E500688E6F /* json.txt in Resources */ = {isa = PBXBuildFile; fileRef = 936EC41D212867E500688E6F /* json.txt */; };
+		936EC4272128694F00688E6F /* FTFormModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 936EC41F2128694E00688E6F /* FTFormModel.m */; };
+		936EC4282128694F00688E6F /* FTFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 936EC4222128694E00688E6F /* FTFormView.m */; };
+		936EC4292128694F00688E6F /* FTFormTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 936EC4252128694F00688E6F /* FTFormTableViewCell.m */; };
+		936EC42A2128694F00688E6F /* FTFormItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 936EC4262128694F00688E6F /* FTFormItemCollectionViewCell.m */; };
+		936EC43021286BD600688E6F /* HZIncidentStatisticsInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 936EC42E21286BD600688E6F /* HZIncidentStatisticsInfoModel.m */; };
 		938868CD1F1700AA009158B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 938868CC1F1700AA009158B5 /* main.m */; };
 		938868CF1F1700AA009158B5 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 938868CE1F1700AA009158B5 /* Podfile */; };
 		938868EC1F1700AA009158B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 938868EB1F1700AA009158B5 /* AppDelegate.m */; };
@@ -36,10 +42,6 @@
 		938869401F1701BE009158B5 /* UIViewController+NavItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9388693E1F1701BE009158B5 /* UIViewController+NavItem.m */; };
 		938869441F1701DF009158B5 /* FTFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938869421F1701DF009158B5 /* FTFormViewController.m */; };
 		938869451F1701DF009158B5 /* FTFormViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 938869431F1701DF009158B5 /* FTFormViewController.storyboard */; };
-		938869491F1705F7009158B5 /* FTFormTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 938869481F1705F7009158B5 /* FTFormTableViewCell.m */; };
-		9388694C1F170658009158B5 /* FTFormItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9388694B1F170658009158B5 /* FTFormItemCollectionViewCell.m */; };
-		938869621F1716DB009158B5 /* FTFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 938869611F1716DB009158B5 /* FTFormView.m */; };
-		938869651F174338009158B5 /* FTFormModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 938869641F174338009158B5 /* FTFormModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,11 +49,22 @@
 		1169560A9F10A37711C8D643 /* Pods-FormTableDemo.app store.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FormTableDemo.app store.xcconfig"; path = "Pods/Target Support Files/Pods-FormTableDemo/Pods-FormTableDemo.app store.xcconfig"; sourceTree = "<group>"; };
 		79BB828E2A658843008EE310 /* libPods-FormTableDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FormTableDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86B8CBCA81844B6ECC5F5A59 /* Pods-FormTableDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FormTableDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FormTableDemo/Pods-FormTableDemo.release.xcconfig"; sourceTree = "<group>"; };
+		936EC41D212867E500688E6F /* json.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json.txt; sourceTree = "<group>"; };
+		936EC41F2128694E00688E6F /* FTFormModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFormModel.m; sourceTree = "<group>"; };
+		936EC4202128694E00688E6F /* FTFormModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFormModel.h; sourceTree = "<group>"; };
+		936EC4212128694E00688E6F /* FTFormItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFormItemCollectionViewCell.h; sourceTree = "<group>"; };
+		936EC4222128694E00688E6F /* FTFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFormView.m; sourceTree = "<group>"; };
+		936EC4232128694F00688E6F /* FTFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFormView.h; sourceTree = "<group>"; };
+		936EC4242128694F00688E6F /* FTFormTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFormTableViewCell.h; sourceTree = "<group>"; };
+		936EC4252128694F00688E6F /* FTFormTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFormTableViewCell.m; sourceTree = "<group>"; };
+		936EC4262128694F00688E6F /* FTFormItemCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFormItemCollectionViewCell.m; sourceTree = "<group>"; };
+		936EC42E21286BD600688E6F /* HZIncidentStatisticsInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZIncidentStatisticsInfoModel.m; sourceTree = "<group>"; };
+		936EC42F21286BD600688E6F /* HZIncidentStatisticsInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZIncidentStatisticsInfoModel.h; sourceTree = "<group>"; };
 		938868C61F1700AA009158B5 /* FormTableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormTableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		938868CA1F1700AA009158B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		938868CB1F1700AA009158B5 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		938868CC1F1700AA009158B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		938868CE1F1700AA009158B5 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../../Podfile; sourceTree = "<group>"; };
+		938868CE1F1700AA009158B5 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../../Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		938868D11F1700AA009158B5 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Staging.xcconfig; path = Xcconfig/Staging.xcconfig; sourceTree = "<group>"; };
 		938868D21F1700AA009158B5 /* ProductionInhouse.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = ProductionInhouse.xcconfig; path = Xcconfig/ProductionInhouse.xcconfig; sourceTree = "<group>"; };
 		938868D31F1700AA009158B5 /* AS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = AS.xcconfig; path = Xcconfig/AS.xcconfig; sourceTree = "<group>"; };
@@ -111,14 +124,6 @@
 		938869411F1701DF009158B5 /* FTFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFormViewController.h; sourceTree = "<group>"; };
 		938869421F1701DF009158B5 /* FTFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFormViewController.m; sourceTree = "<group>"; };
 		938869431F1701DF009158B5 /* FTFormViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FTFormViewController.storyboard; sourceTree = "<group>"; };
-		938869471F1705F7009158B5 /* FTFormTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFormTableViewCell.h; sourceTree = "<group>"; };
-		938869481F1705F7009158B5 /* FTFormTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFormTableViewCell.m; sourceTree = "<group>"; };
-		9388694A1F170658009158B5 /* FTFormItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFormItemCollectionViewCell.h; sourceTree = "<group>"; };
-		9388694B1F170658009158B5 /* FTFormItemCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFormItemCollectionViewCell.m; sourceTree = "<group>"; };
-		938869601F1716DB009158B5 /* FTFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFormView.h; sourceTree = "<group>"; };
-		938869611F1716DB009158B5 /* FTFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFormView.m; sourceTree = "<group>"; };
-		938869631F174338009158B5 /* FTFormModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFormModel.h; sourceTree = "<group>"; };
-		938869641F174338009158B5 /* FTFormModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFormModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +194,7 @@
 		938868C91F1700AA009158B5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				936EC41D212867E500688E6F /* json.txt */,
 				938868CE1F1700AA009158B5 /* Podfile */,
 				938868CA1F1700AA009158B5 /* Info.plist */,
 				938868CB1F1700AA009158B5 /* Prefix.pch */,
@@ -256,6 +262,8 @@
 		938868DC1F1700AA009158B5 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				936EC42F21286BD600688E6F /* HZIncidentStatisticsInfoModel.h */,
+				936EC42E21286BD600688E6F /* HZIncidentStatisticsInfoModel.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -412,14 +420,14 @@
 		938869461F1705C9009158B5 /* form */ = {
 			isa = PBXGroup;
 			children = (
-				938869601F1716DB009158B5 /* FTFormView.h */,
-				938869611F1716DB009158B5 /* FTFormView.m */,
-				938869471F1705F7009158B5 /* FTFormTableViewCell.h */,
-				938869481F1705F7009158B5 /* FTFormTableViewCell.m */,
-				9388694A1F170658009158B5 /* FTFormItemCollectionViewCell.h */,
-				9388694B1F170658009158B5 /* FTFormItemCollectionViewCell.m */,
-				938869631F174338009158B5 /* FTFormModel.h */,
-				938869641F174338009158B5 /* FTFormModel.m */,
+				936EC4212128694E00688E6F /* FTFormItemCollectionViewCell.h */,
+				936EC4262128694F00688E6F /* FTFormItemCollectionViewCell.m */,
+				936EC4202128694E00688E6F /* FTFormModel.h */,
+				936EC41F2128694E00688E6F /* FTFormModel.m */,
+				936EC4242128694F00688E6F /* FTFormTableViewCell.h */,
+				936EC4252128694F00688E6F /* FTFormTableViewCell.m */,
+				936EC4232128694F00688E6F /* FTFormView.h */,
+				936EC4222128694E00688E6F /* FTFormView.m */,
 			);
 			path = form;
 			sourceTree = "<group>";
@@ -488,6 +496,7 @@
 				9388693A1F17019A009158B5 /* FTHomeViewController.storyboard in Resources */,
 				938868F51F1700AA009158B5 /* images.xcassets in Resources */,
 				938869451F1701DF009158B5 /* FTFormViewController.storyboard in Resources */,
+				936EC41E212867E500688E6F /* json.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,24 +560,25 @@
 				938868EC1F1700AA009158B5 /* AppDelegate.m in Sources */,
 				938869261F1700DA009158B5 /* UIActionSheet+Blocks.m in Sources */,
 				938869281F1700DA009158B5 /* UIButton+ActivityIndicatorView.m in Sources */,
+				936EC43021286BD600688E6F /* HZIncidentStatisticsInfoModel.m in Sources */,
 				938869351F1700DA009158B5 /* PortraitNavigationController.m in Sources */,
 				938869311F1700DA009158B5 /* AutorotateNavigationController.m in Sources */,
+				936EC4272128694F00688E6F /* FTFormModel.m in Sources */,
 				938869291F1700DA009158B5 /* UILabel+FormattedText.m in Sources */,
+				936EC4282128694F00688E6F /* FTFormView.m in Sources */,
 				9388692A1F1700DA009158B5 /* UIStoryboard+Addition.m in Sources */,
 				938869391F17019A009158B5 /* FTHomeViewController.m in Sources */,
 				9388693F1F1701BE009158B5 /* GGUtil.m in Sources */,
 				938868CD1F1700AA009158B5 /* main.m in Sources */,
 				938869301F1700DA009158B5 /* ArrayUtils.m in Sources */,
+				936EC42A2128694F00688E6F /* FTFormItemCollectionViewCell.m in Sources */,
 				9388692C1F1700DA009158B5 /* UIView+Create.m in Sources */,
 				9388692E1F1700DA009158B5 /* UIView+Utils.m in Sources */,
-				938869651F174338009158B5 /* FTFormModel.m in Sources */,
 				938869251F1700DA009158B5 /* NSObject+AutoDescription.m in Sources */,
 				938869441F1701DF009158B5 /* FTFormViewController.m in Sources */,
-				938869491F1705F7009158B5 /* FTFormTableViewCell.m in Sources */,
-				9388694C1F170658009158B5 /* FTFormItemCollectionViewCell.m in Sources */,
+				936EC4292128694F00688E6F /* FTFormTableViewCell.m in Sources */,
 				9388692F1F1700DA009158B5 /* UIViewController+Create.m in Sources */,
 				938869401F1701BE009158B5 /* UIViewController+NavItem.m in Sources */,
-				938869621F1716DB009158B5 /* FTFormView.m in Sources */,
 				938869321F1700DA009158B5 /* GGDatePickerHelper.m in Sources */,
 				938869271F1700DA009158B5 /* UIAlertView+Blocks.m in Sources */,
 				9388692B1F1700DA009158B5 /* UITableViewCell+Utils.m in Sources */,

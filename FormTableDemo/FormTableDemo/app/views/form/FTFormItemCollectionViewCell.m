@@ -28,10 +28,12 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     self.titleLabel.frame = self.bounds;
+    self.iconImageView.frame = self.bounds;
 }
 
 - (void)setupView {
     [self addSubview:self.titleLabel];
+    [self addSubview:self.iconImageView];
 }
 
 - (UILabel *)titleLabel {
@@ -39,8 +41,18 @@
         _titleLabel = [[UILabel alloc] init];
         _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.font = [UIFont systemFontOfSize:12.f];
+        _titleLabel.backgroundColor = [UIColor clearColor];
     }
     return _titleLabel;
+}
+
+- (UIImageView *)iconImageView {
+    if (!_iconImageView) {
+        _iconImageView = [[UIImageView alloc] init];
+        _iconImageView.contentMode = UIViewContentModeCenter;
+        _iconImageView.hidden = YES;
+    }
+    return _iconImageView;
 }
 
 @end

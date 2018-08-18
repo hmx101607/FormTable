@@ -9,6 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "FTFormModel.h"
 
+#define kFormTitle @"kFormTitle"
+#define kFormIndex @"kFormIndex"
+#define kFormItemArray @"kFormItemArray"
+#define kClickFormItemNotification @"kClickFormItemNotification"
+
+
 @interface FTFormTableViewCell : UITableViewCell
 
 /** <##> */

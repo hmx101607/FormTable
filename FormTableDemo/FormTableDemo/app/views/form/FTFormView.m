@@ -31,9 +31,15 @@ UITableViewDataSource
     return self;
 }
 
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    self.backgroundColor = [UIColor redColor];
+    [self setupTableView];
+}
+
 - (void)layoutSubviews {
     [super layoutSubviews];
-    CGFloat margin = 1.f / [UIScreen mainScreen].scale;
+    CGFloat margin = 0;//1.f / [UIScreen mainScreen].scale;
     self.tableView.frame = CGRectMake(margin, margin, self.width - 2 * margin, self.height - 2 * margin);
 }
 
@@ -48,9 +54,9 @@ UITableViewDataSource
     tableView.delegate = self;
     tableView.dataSource = self;
     tableView.scrollEnabled = NO;
-    tableView.contentInset = UIEdgeInsetsMake(-64.f, 0, 0, 0);
+    tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
     [tableView registerClass:[FTFormTableViewCell class] forCellReuseIdentifier:[FTFormTableViewCell reuseIdentifier]];
-    tableView.separatorColor = [UIColor redColor];
+    tableView.separatorColor = UIColorHex(dedcd7);
     self.tableView = tableView;
 }
 
@@ -75,8 +81,10 @@ UITableViewDataSource
 
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    FTFormModel *formModel = self.formModelArray[indexPath.row];
+    CGFloat padding = tableView.width - formModel.separateLineWidth;
     if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
-        [cell setSeparatorInset:UIEdgeInsetsMake(0, 0, 0, 0)];
+        [cell setSeparatorInset:UIEdgeInsetsMake(0, padding, 0, 0)];
     }
     
     if ([cell respondsToSelector:@selector(setPreservesSuperviewLayoutMargins:)]) {
@@ -84,7 +92,7 @@ UITableViewDataSource
     }
     
     if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
-        [cell setSeparatorInset:UIEdgeInsetsMake(0, 0, 0, 0)];
+        [cell setSeparatorInset:UIEdgeInsetsMake(0, padding, 0, 0)];
     }
 }
 @end

@@ -10,7 +10,11 @@
 
 @interface FTFormItemCollectionViewCell : UICollectionViewCell
 
-/** <##> */
+/** 文本 */
 @property (strong, nonatomic) UILabel *titleLabel;
+
+/** 图标 */
+@property (strong, nonatomic) UIImageView *iconImageView;
+
 
 @end
